@@ -3,8 +3,9 @@ import { Routes, RouterModule } from "@angular/router";
 import { Page404Component } from "./../../authentication/page404/page404.component";
 import { EditProductdepartmentComponent } from "./editproductdepartment/editproductdepartment.component";
 import { AllproductdepartmentComponent } from "./allproductsdepartment/allproductsdepartment.component";
-import { addProductdepartmentComponent } from "./addproductdepartment/addproductdepartment.component";
+import { AddProductdepartmentComponent } from "./addproductdepartment/addproductdepartment.component";
 import { PermissionGuard } from "src/app/core/guard/permission.guard";
+
 const routes: Routes = [
   {
     path: "allproductsdepartment",
@@ -16,7 +17,7 @@ const routes: Routes = [
     path: "addproductdepartment",
     canActivate: [PermissionGuard],
     data: { permission: true },
-    component: addProductdepartmentComponent,
+    component: AddProductdepartmentComponent,
   },
   {
     path: "editproductdepartment",

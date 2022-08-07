@@ -150,6 +150,49 @@ export class AllRoutesService {
           submenu: [],
         }
       ],
+    },
+    {
+      path: "",
+      title: "MENUITEMS.productcategory.TEXT",
+      moduleName: "productcategory",
+      iconType: "material-icons-two-tone",
+      icon: "person",
+      class: "menu-toggle",
+      groupTitle: false,
+      badge: "",
+      badgeClass: "",
+      role: ["All"],
+      displayPermission: true,
+      submenu: [
+        {
+          path: "/admin/productcategory/allproductcategory",
+          title: "MENUITEMS.productsdepartment.LIST.All-productcategory",
+          moduleName: "productcategory",
+          iconType: "",
+          icon: "",
+          class: "ml-menu",
+          groupTitle: false,
+          badge: "",
+          badgeClass: "",
+          role: [""],
+          displayPermission: true,
+          submenu: [],
+        },
+        {
+          path: "/admin/productcategory/addproductcategory",
+          title: "MENUITEMS.productsdepartment.LIST.Newproductcategory",
+          moduleName: "productcategory",
+          iconType: "",
+          icon: "",
+          class: "ml-menu",
+          groupTitle: false,
+          badge: "",
+          badgeClass: "",
+          role: [""],
+          displayPermission: true,
+          submenu: [],
+        }
+      ],
     }
     // Admin Modules
   ];

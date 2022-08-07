@@ -2,19 +2,19 @@ import { HttpErrorResponse } from "@angular/common/http";
 import { Component } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { MatSnackBar } from "@angular/material/snack-bar";
-import { ProductdepartmentService } from "../allproductsdepartment/productdepartment.service";
+import { ProductCategoryService } from "../allproductcategory/productcategory.service";
 @Component({
-  selector: "app-addproductdepartment",
-  templateUrl: "./addproductdepartment.component.html",
-  styleUrls: ["./addproductdepartment.component.sass"],
+  selector: "app-addproductcategory",
+  templateUrl: "./addproductcategory.component.html",
+  styleUrls: ["./addproductcategory.component.sass"],
 })
-export class AddProductdepartmentComponent {
-  productdepartmentForm: FormGroup;
+export class AddProductCategoryComponent {
+  productCategoryForm: FormGroup;
   constructor(private fb: FormBuilder,
-    public productdepartmentService: ProductdepartmentService,
+    public productCategoryService: ProductCategoryService,
     private snackBar: MatSnackBar,
     ) {
-     this.productdepartmentForm = this.fb.group({
+     this.productCategoryForm = this.fb.group({
       name: ['', {
         validators: [Validators.required, Validators.maxLength(64)]
       }],
@@ -43,8 +43,8 @@ export class AddProductdepartmentComponent {
   }
 
   onSubmit() {
-    this.productdepartmentService.addProductdepartment(this.productdepartmentForm.value).subscribe(data => {
-      this.productdepartmentForm.reset();
+    this.productCategoryService.addProductCategory(this.productCategoryForm.value).subscribe(data => {
+      this.productCategoryForm.reset();
       this.showNotification(
         "snackbar-success",
         data.messages[0],

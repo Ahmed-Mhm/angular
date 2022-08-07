@@ -27,7 +27,7 @@
             <br>
           </div>
           <div class="body">
-            <form class="m-4" [formGroup]="productdepartmentForm" (ngSubmit)="onSubmit()">
+            <form class="m-4" [formGroup]="productCategoryForm" (ngSubmit)="onSubmit()">
               <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
                   <mat-form-field class="example-full-width"  appearance="outline">
@@ -70,7 +70,7 @@
               </div>
               <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
-                  <button class="btn-space" [disabled]="!productdepartmentForm.valid " mat-raised-button
+                  <button class="btn-space" [disabled]="!productCategoryForm.valid " mat-raised-button
                     color="primary">{{ 'COMMON.Save' | translate }}</button>
                   <button type="button" mat-button>{{ 'COMMON.Cancel' | translate }}</button>
                 </div>

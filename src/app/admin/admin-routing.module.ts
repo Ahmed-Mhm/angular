@@ -22,6 +22,12 @@ const routes: Routes = [
     loadChildren: () =>
       import("./productdepartment/productdepartment.module").then((m) => m.ProductdepartmentModule),
   }
+  ,
+  {
+    path: "productcategory",
+    loadChildren: () =>
+      import("./productcategory/productcategory.module").then((m) => m.ProductCategoryModule),
+  }
 ];
 
 @NgModule({

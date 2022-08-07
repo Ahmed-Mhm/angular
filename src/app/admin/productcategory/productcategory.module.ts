@@ -15,13 +15,13 @@ import { MatSortModule } from "@angular/material/sort";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatDatepickerModule } from "@angular/material/datepicker";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
-import { ProductdepartmentRoutingModule } from "./productdepartment-routing.module";
-import { DeleteDialogComponent } from "./allproductsdepartment/dialog/delete/delete.component";
-import { FormDialogComponent } from "./allproductsdepartment/dialog/form-dialog/form-dialog.component";
-import { AddProductdepartmentComponent } from "./addproductdepartment/addproductdepartment.component";
-import { ProductdepartmentService } from "./allproductsdepartment/productdepartment.service";
-import { EditProductdepartmentComponent } from "./editproductdepartment/editproductdepartment.component";
-import { AllproductdepartmentComponent } from "./allproductsdepartment/allproductsdepartment.component";
+import { ProductCategoryRoutingModule } from "./productcategory-routing.module";
+import { DeleteDialogComponent } from "./allproductcategory/dialog/delete/delete.component";
+import { FormDialogComponent } from "./allproductcategory/dialog/form-dialog/form-dialog.component";
+import { AddProductCategoryComponent } from "./addproductcategory/addproductcategory.component";
+import { ProductCategoryService } from "./allproductcategory/productcategory.service";
+import { EditProductCategoryComponent } from "./editproductcategory/editproductcategory.component";
+import { AllProductCategoryComponent } from "./allproductcategory/allproductcategory.component";
 import { DataTablesModule } from "angular-datatables";
 import { TranslateModule } from "@ngx-translate/core";
 import { HttpClient } from "@angular/common/http";
@@ -34,11 +34,11 @@ export function createTranslateLoader(http: HttpClient): any {
 }
 @NgModule({
   declarations: [
-    AllproductdepartmentComponent,
+    AllProductCategoryComponent,
     DeleteDialogComponent,
     FormDialogComponent,
-    EditProductdepartmentComponent,
-    AddProductdepartmentComponent,
+    EditProductCategoryComponent,
+    AddProductCategoryComponent,
   ],
   imports: [
     CommonModule,
@@ -57,13 +57,13 @@ export function createTranslateLoader(http: HttpClient): any {
     MatToolbarModule,
     MatSelectModule,
     MatDatepickerModule,
-    ProductdepartmentRoutingModule,
+    ProductCategoryRoutingModule,
     MatProgressSpinnerModule,
     DataTablesModule,
     TranslateModule,
     FileUploadModule,
     HttpClientModule
   ],
-  providers: [ProductdepartmentService],
+  providers: [ProductCategoryService],
 })
-export class ProductdepartmentModule {}
+export class ProductCategoryModule {}
