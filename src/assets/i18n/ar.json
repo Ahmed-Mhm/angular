@@ -1,0 +1,73 @@
+{
+  "MENUITEMS": {
+    "MAIN": {
+      "TEXT": "الرئيسة --"
+    },
+    "HOME": {
+      "TEXT": "الرئيسة",
+      "LIST": {
+        "DASHBOARD1": "لوحة التحكم"
+      }
+    },
+    "ROLES":{
+      "TEXT": "الادوار",
+      "LIST": {
+        "ALL-ROLES": "كل الادوار",
+        "NEW-ROLE": "دور جديدة"
+      }
+    },
+    "USERS":{
+      "TEXT": "المستخدمين",
+      "LIST": {
+        "All-USERS": "كل المستخدمين",
+        "NewUser": "مستخدم جديد"
+      }
+    }
+  },
+  "COMMON": {
+    "Logout": "تسجيل الخروج",
+    "Email": "الإيميل",
+    "Login": "تسجيل الدخول",
+    "Save":"حفظ",
+    "SaveAndClose": "حفظ وخروج",
+    "Cancel": "الغاء",
+    "View": "عرض",
+    "Action": "الخيارات",
+    "Name": "الاسم",
+    "IsActive": "مفعل",
+    "DisplayOrder": "ترتيب العرض",
+    "ForignName": "الاسم أجنبي"
+  },
+  "Signin": {
+    "Welcome": "مرحبا بكم في بيان أي ار بي",
+    "NeedAnAccount": "هل تحتاج إلى حساب؟",
+    "alreadyHaveAccount": "هل لديك حساب؟",
+    "SignUp": "تسجيل",
+    "SignIn": "تسجيل الدخول",
+    "Username": "إسم المستخدم",
+    "FristName": "الاسم الاول",
+    "LastName": "الاسم الاخير",
+    "PhoneNumber": "رقم الهاتف",
+    "Password": "كلمة المرور",
+    "FristNameIsRequired": "الاسم الاول مطلوب",
+    "LastNameIsRequired": "الاسم الاخير مطلوب",
+    "PhoneNumberIsRequired": "رقم الهاتف مطلوب",
+    "UsernameIsRequired": "إسم المستخدم مطلوب",
+    "PasswordIsRequired": "كلمة المرور مطلوبة",
+    "RememberMe": "تذكرني",
+    "ForgotPassword": "هل نسيت كلمة المرور؟",
+    "OR": "أو"
+  },
+  "Profile":{
+    "Profile":"البروفايل"
+  },
+  "Users":{
+    "FullName": "الاسم الرباعي",
+    "email": "الايميل",
+    "phoneNumber": "رقم الهاتف",
+    "password": "كلمة المرور",
+    "confirmPassword": "تاكيد كلمة المرور",
+    "emailConfirmed": "تم تاكيد الايميل",
+    "phoneNumberConfirmed": "تم تاكيد رقم الهاتف"
+  }
+}

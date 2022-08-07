@@ -1,0 +1,79 @@
+<section class="content">
+  <div class="container-fluid">
+    <div class="block-header">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <ul class="breadcrumb breadcrumb-style ">
+            <li class="breadcrumb-item">
+              <h4 class="page-title">{{ 'COUNTRIES.NewCountry' | translate }}</h4>
+            </li>
+            <li class="breadcrumb-item bcrumb-1">
+              <a routerLink="/admin/dashboard/main">
+                <i class="fas fa-home"></i> {{ 'MENUITEMS.HOME.TEXT' | translate }}</a>
+            </li>
+            <li class="breadcrumb-item bcrumb-2">
+              <a href="#" onClick="return false;">{{ 'MENUITEMS.COUNTRIES.TEXT' | translate }}</a>
+            </li>
+            <li class="breadcrumb-item active">{{ 'Country.NewCountry' | translate }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row clearfix">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2><strong> {{ 'Country.NewCountry' | translate }}</strong></h2>
+            <br>
+          </div>
+          <div class="body">
+            <form class="m-4" [formGroup]="countryForm" (ngSubmit)="onSubmit()">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width"  appearance="outline">
+                    <mat-label>{{ 'COMMON.imageUrl' | translate }}</mat-label>
+                    <input matInput formControlName="imageUrl" required>
+                  </mat-form-field>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width"  appearance="outline">
+                    <mat-label>{{ 'COMMON.Name' | translate }}</mat-label>
+                    <input matInput formControlName="name" required>
+                  </mat-form-field>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width"  appearance="outline">
+                    <mat-label>{{ 'COMMON.ForignName' | translate }}</mat-label>
+                    <input matInput formControlName="fName" required>
+                  </mat-form-field>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width"  appearance="outline">
+                    <mat-label>{{ 'COMMON.image' | translate }}</mat-label>
+                    <input matInput formControlName="image" required>
+                  </mat-form-field>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-form-field class="example-full-width"  appearance="outline">
+                    <mat-label>{{ 'COMMON.DisplayOrder' | translate }}</mat-label>
+                    <input matInput formControlName="displayOrder" required>
+                  </mat-form-field>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-checkbox class="example-margin" formControlName="isActive">{{ 'COMMON.IsActive' | translate }}</mat-checkbox>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <button class="btn-space" [disabled]="!countryForm.valid " mat-raised-button
+                    color="primary">{{ 'COMMON.Save' | translate }}</button>
+                  <button type="button" mat-button>{{ 'COMMON.Cancel' | translate }}</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

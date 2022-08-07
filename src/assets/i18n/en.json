@@ -1,0 +1,77 @@
+{
+  "MENUITEMS": {
+    "MAIN": {
+      "TEXT": "-- Main"
+    },
+    "HOME": {
+      "TEXT": "Home",
+      "LIST": {
+        "DASHBOARD1": "Dashboard"
+      }
+    },
+    "ROLES":{
+      "TEXT": "Roles",
+      "LIST": {
+        "ALL-ROLES": "ALL-Rloes",
+        "NEW-ROLE": "New-Roles"
+      }
+    },
+    "USERS":{
+      "TEXT": "Users",
+      "LIST": {
+        "All-USERS": "All-Users",
+        "NewUser": "New-User"
+      }
+    }
+  },
+  "COMMON": {
+    "Logout": "Logout",
+    "Email": "Email",
+    "Login": "Log In",
+    "Save": "Save",
+    "SaveAndClose": "Save And Close",
+    "Cancel": "Cancel",
+    "View": "View",
+    "Delete": "Delete",
+    "Action": "Action",
+    "Name": "Name",
+    "IsActive": "Is Active",
+    "DisplayOrder": "Display Order",
+    "ForignName": "Forign Name",
+    "description": "Description",
+    "imageUrl": "Image Url",
+    "image": "image"
+  },
+  "Signin": {
+    "Welcome": "Welcome to Bayan ERP",
+    "NeedAnAccount": "Need an account?",
+    "alreadyHaveAccount": "Already have account?",
+    "SignUp": "Sign Up",
+    "SignIn": "Sign In",
+    "Username": "Username",
+    "FristName": "Frist Name",
+    "LastName": "Last Name",
+    "PhoneNumber": "Phone Number",
+    "Password": "Password",
+    "UsernameIsRequired": "Username is required",
+    "FristNameIsRequired": "Frist Name required",
+    "LastNameIsRequired": "Last Name required",
+    "PhoneNumberIsRequired": "Phone Number required",
+    "PasswordIsRequired": "Password is required",
+    "RememberMe": "Remember me",
+    "ForgotPassword": "Forgot Password?",
+    "OR": "OR"
+  },
+  "Profile":{
+    "Profile":"Profile"
+  },
+  "Users":{
+    "FullName": "Full Name",
+    "email": "Email",
+    "phoneNumber": "Phone Number",
+    "password": "password",
+    "confirmPassword": "confirm Password",
+    "emailConfirmed": "email Confirmed",
+    "phoneNumberConfirmed": "Phone Number Confirmed"
+  }
+}

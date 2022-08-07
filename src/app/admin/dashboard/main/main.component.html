@@ -1,0 +1,113 @@
+<section class="content">
+  <div class="container-fluid">
+    <div class="block-header">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <ul class="breadcrumb breadcrumb-style ">
+            <li class="breadcrumb-item">
+              <h4 class="page-title">Dashboard</h4>
+            </li>
+            <li class="breadcrumb-item bcrumb-1">
+              <a routerLink="/admin/dashboard/main">
+                <i class="fas fa-home"></i> Home</a>
+            </li>
+          </ul>
+          <h4 class="page-title">Main Dashboard</h4>
+
+          <!-- <div class="card">
+            <p-carousel [value]="promotions" [numVisible]="3" [numScroll]="3" [circular]="false">
+              <ng-template let-promotion pTemplate="item">
+                  <div class="product-item">
+                      <div class="product-item-content">
+                          <div class="mb-3">
+                              <img [src]="promotion.imageUrl" [alt]="promotion.Name" style="width: 10rem ;" class="product-image" />
+                          </div>
+                          <div>
+                              <h4 class="mb-1">{{promotion.name}}</h4>
+                              <h6 class="mt-0 mb-3">{{promotion.description}}</h6>
+                              <span [class]="'product-badge status-'+promotion.start_Date.toLowerCase()">{{promotion.start_Date}} -- </span>
+                              <span [class]="'product-badge status-'+promotion.end_Date.toLowerCase()">{{promotion.end_Date}}</span>
+                          </div>
+                      </div>
+                  </div>
+              </ng-template>
+            </p-carousel>
+          </div> -->
+
+          <div class="card">
+            <p-button (click)="showDialog()" icon="pi pi-external-link" label="Show"></p-button>
+            <hr/>
+            <p-dataView  #dv [value]="products" [paginator]="true" [rows]="9" filterBy="name"
+                [sortField]="sortField" [sortOrder]="sortOrder" layout="grid">
+                <ng-template pTemplate="header">
+                    <div class="flex flex-column md:flex-row md:justify-content-between">
+                        <p-dropdown [options]="sortOptions" [(ngModel)]="sortKey" placeholder="Sort By Price" (onChange)="onSortChange($event)" styleClass="mb-2 md:mb-0"></p-dropdown>
+                        <span class="p-input-icon-left mb-2 md:mb-0">
+                            <i class="pi pi-search"></i>
+                            <input type="search" pInputText placeholder="Search by Name" (input)="dv.filter($event.target.value)">
+                        </span>
+                        <p-dataViewLayoutOptions></p-dataViewLayoutOptions>
+                    </div>
+                </ng-template>
+                <ng-template let-product pTemplate="listItem">
+                  <div class="col-12 ">
+                    <div class="product-list-item">
+                        <img [src]="product.imageUrl" alt="../../../../assets/images/image-gallery/1.jpg"/>
+                        <div class="product-list-detail">
+                            <div class="product-name">{{product.name}}</div>
+                            <div class="product-description">{{product.description}}</div>
+                            <p-rating [ngModel]="product.rating" [readonly]="true" [cancel]="false"></p-rating>
+                            <i class="pi pi-tag product-category-icon"></i><span class="product-categoryName">{{product.categoryName}}</span>
+                        </div>
+                        <div class="product-list-action">
+                            <span class="product-price">${{product.price}}</span>
+                            <p-splitButton label="Actions" [model]="items" styleClass="p-button-raised mr-2 mb-2"></p-splitButton>
+                            <!-- <p-button icon="pi pi-shopping-cart" label="Add to Cart" [disabled]="product.statusName === 'OUTOFSTOCK'"></p-button> -->
+                            <span [class]="'product-badge status-' + product.statusName.toLowerCase()">{{product.statusName}}</span>
+                        </div>
+                    </div>
+                  </div>
+                </ng-template>
+                <ng-template let-product pTemplate="gridItem">
+                  <div class="col-12 col-md-4 col-sm-12 col-lg-4">
+                    <div class="product-grid-item card">
+                        <div class="product-grid-item-top">
+                            <div>
+                                <i class="pi pi-tag product-category-icon"></i>
+                                <span class="product-categoryName">{{product.categoryName}}</span>
+                            </div>
+                            <span [class]="'product-badge status-' + product.statusName.toLowerCase()">{{product.statusName}}</span>
+                        </div>
+                        <div class="product-grid-item-content">
+                            <img [src]="product.imageUrl" [alt]="product.name"/>
+                            <div class="product-name">{{product.name}}</div>
+                            <div class="product-description">{{product.description}}</div>
+                            <p-rating [ngModel]="product.rating" [readonly]="true" [cancel]="false"></p-rating>
+                        </div>
+                        <div class="product-grid-item-bottom">
+                            <span class="product-price">${{product.price}}</span>
+                            <p-splitButton label="Actions" [model]="items" styleClass="p-button-raised mr-2 mb-2"></p-splitButton>
+                            <!--<p-button icon="pi pi-shopping-cart" [disabled]="product.statusName === 'OUTOFSTOCK'"></p-button>-->                        </div>
+                    </div>
+                  </div>
+              </ng-template>
+            </p-dataView>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <p-confirmDialog header="Confirmation" icon="pi pi-exclamation-triangle"></p-confirmDialog>
+
+  <p-dialog header="Edit" [(visible)]="display" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '50vw'}">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <ng-template pTemplate="footer">
+        <p-button icon="pi pi-check" (click)="display=false" label="Update" styleClass="p-button-text"></p-button>
+    </ng-template>
+  </p-dialog>
+
+</section>

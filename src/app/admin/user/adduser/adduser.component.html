@@ -1,0 +1,90 @@
+<section class="content">
+  <div class="container-fluid">
+    <div class="block-header">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <ul class="breadcrumb breadcrumb-style ">
+            <li class="breadcrumb-item">
+              <h4 class="page-title">{{ 'MENUITEMS.USERS.LIST.NewUser' | translate }}</h4>
+            </li>
+            <li class="breadcrumb-item bcrumb-1">
+              <a routerLink="/admin/dashboard/main">
+                <i class="fas fa-home"></i> {{ 'MENUITEMS.HOME.TEXT' | translate }}</a>
+            </li>
+            <li class="breadcrumb-item bcrumb-2">
+              <a href="#" onClick="return false;">{{ 'MENUITEMS.COUNTRIES.TEXT' | translate }}</a>
+            </li>
+            <li class="breadcrumb-item active">{{ 'MENUITEMS.USERS.LIST.NewUser' | translate }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row clearfix">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="header">
+            <h2><strong> {{ 'MENUITEMS.USERS.LIST.NewUser' | translate }}</strong></h2>
+            <br>
+          </div>
+          <div class="body">
+            <form class="m-4" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>{{ 'Users.FullName' | translate }}</mat-label>
+                    <input matInput formControlName="fullName">
+                    <mat-icon matSuffix>person</mat-icon>
+                  </mat-form-field>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>{{ 'Users.email' | translate }}</mat-label>
+                    <input matInput formControlName="email" required>
+                    <mat-icon matSuffix>alternate_email</mat-icon>
+                  </mat-form-field>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>{{ 'Users.phoneNumber' | translate }}</mat-label>
+                    <input matInput formControlName="phoneNumber" required>
+                    <mat-icon matSuffix>call</mat-icon>
+                  </mat-form-field>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>{{ 'Users.password' | translate }}</mat-label>
+                    <input matInput formControlName="password" required>
+                    <mat-icon matSuffix>password</mat-icon>
+                  </mat-form-field>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-2">
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>{{ 'Users.confirmPassword' | translate }}</mat-label>
+                    <input matInput formControlName="confirmPassword" required>
+                    <mat-icon matSuffix>password</mat-icon>
+                  </mat-form-field>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-checkbox class="example-margin" formControlName="emailConfirmed">{{ 'Users.emailConfirmed' | translate }}</mat-checkbox>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-checkbox class="example-margin" formControlName="phoneNumberConfirmed">{{ 'Users.phoneNumberConfirmed' | translate }}</mat-checkbox>
+                </div>
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <mat-checkbox class="example-margin" formControlName="isActive">{{ 'COMMON.IsActive' | translate }}</mat-checkbox>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                  <button class="btn-space" [disabled]="!userForm.valid " mat-raised-button
+                    color="primary">{{ 'COMMON.Save' | translate }}</button>
+                  <button type="button" mat-button>{{ 'COMMON.Cancel' | translate }}</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

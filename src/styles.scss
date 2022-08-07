@@ -1,0 +1,374 @@
+/* You can add global styles to this file, and also import other style files */
+.blue-snackbar {
+    background: rgb(14, 131, 226);
+    color: white;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    padding: 0 10px !important;
+}
+
+.dtr-details {
+    width: 100%;
+}
+
+div.dataTables_wrapper div.dataTables_filter input{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.p-dialog-footer{
+    direction: ltr;
+}
+.p-dropdown-panel .p-dropdown-header .p-dropdown-filter {
+    padding-right: auto !important;
+    margin-right: auto !important;
+}
+.p-dropdown.p-dropdown-clearable .p-dropdown-label{
+    padding-right: auto !important;
+    margin-right: auto !important; 
+}
+#dropdownMenuButton1{
+    border: 1px solid #3f51b5;
+    background-color: none;
+    background: none;
+}
+.dropdown-menu{
+    border-radius: 4px;
+}
+.dropdown-menu li{
+cursor: pointer;
+}
+.activate,.role{
+    color: #0d6efd;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+.deactivate{
+    vertical-align: middle;
+    margin: 0 5px;
+}
+.actionSetting{
+    vertical-align: middle;
+    font-size: 15px;
+    line-height: 1.6;
+}
+.mat-dialog-content{
+    overflow-x: hidden !important;
+}
+.mat-dialog-content{
+  max-height: 80vh !important;
+}
+.p-button-label{
+    margin-right: 4px;
+    margin-left: 4px;
+}
+.hideitem{
+    display: none !important;
+}
+.permissions .mat-dialog-content{
+    max-height: 55vh;
+}
+.p-fileupload-row .p-button-label{
+display: none;
+}
+table .false{
+    display: none !important;
+}
+.display-card-top{
+background-color: #cccccc78;
+color: black;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+.left-side{
+    margin: 0px !important;
+    .sl-content{
+        margin: 10px 5px 5px 16px;
+        color: #464444;
+    }
+}
+.right-side{
+    margin: 0px !important;
+    .sl-content{
+        float: right;
+    }
+    mat-icon{
+        font-size: 17px;
+    }
+    .mat-icon-button{
+        width: 34px;
+    }
+}
+}
+.change-display-to-card tbody,.change-display-to-card thead{
+    display: none;
+}
+.table > :not(:first-child){
+    border-top: 0px;
+}
+.filter{
+    border: 1px solid #0000ff40;
+}
+.FilerCheckboxLable{
+    margin: 0px 7px;
+}
+.mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 0.5em 0 1em 0;
+}
+.addressIcon{
+    font-size: 11px;
+    color: #0d6efd;
+    margin: 0px 4px;
+}
+.profilePhone, .profileEmail{
+    vertical-align: middle;
+    margin: 0px 4px;
+}
+.dtr-data{
+    margin: 0px 40px;
+}
+.map {
+    width: 100%;
+    height: 400px;
+}
+.p-chip{
+    margin: 5px;
+    padding: 6px 12px 6px 12px !important;
+}
+.servicesChips{
+    margin-top: 6px;
+}
+
+.iti {
+    display: block !important;
+    margin-bottom: 20px;
+  }
+  
+  .iti .dropdown-menu.country-dropdown {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-color: #c7cace;
+    margin-top: -1px;
+  }
+  
+  .iti .iti__country-list {
+    box-shadow: none;
+    font-size: 14px;
+    margin-left: 0;
+    width: 100%;
+    max-height: 170px;
+  }
+  
+  .iti__flag-container.open + input {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  
+  .iti .search-container input {
+    font-size: 14px;
+    border-color: #c7cace;
+    border-radius: 0;
+    padding: 5px 10px;
+  }
+  
+  .iti .search-container input:focus {
+    outline: none;
+  }
+  
+  @media screen and (max-width: 479px) {
+    .iti .iti__country-list {
+      width: 88.3vw;
+    }
+  }
+  
+  ngx-intl-tel-input input {
+    height: 44px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c7cace;
+    border-radius: 4px;
+    font-size: 18px;
+    width: 100%;
+  }
+  
+  ngx-intl-tel-input.ng-invalid.ng-touched input {
+    border: 1px solid #c0392b;
+  }
+  
+  ngx-intl-tel-input input:hover {
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  ngx-intl-tel-input input:focus {
+    outline: none !important;
+    border-color: #3498db;
+    box-shadow: 0 0 0 0 #000;
+  }
+  
+  ngx-intl-tel-input input::-webkit-input-placeholder {
+    color: #bac2c7;
+  }
+  
+  ngx-intl-tel-input input:-ms-input-placeholder {
+    color: #bac2c7;
+  }
+  
+  ngx-intl-tel-input input::-ms-input-placeholder {
+    color: #bac2c7;
+  }
+  
+  ngx-intl-tel-input input::placeholder {
+    color: #bac2c7;
+  }
+  
+  ngx-intl-tel-input input[disabled] {
+    background-color: #e5eaf1;
+  }
+  .selected-dial-code ,.iti__dial-code{
+    margin: 5px;
+  }
+  
+  .dayandperiods{
+    border: 2px solid #8080803b;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+ .removeDay,.addDayButton{
+    margin-top: 7px !important;
+  }
+  .removePeriod{
+    margin-top: 22px !important;
+  }
+  .p-calendar-timeonly,.p-input-icon-right{
+      width: 100% !important;
+  }
+.fa-clock{
+    z-index: 999;
+}
+.periods{
+    width: fit-content;
+}
+.mat-simple-snackbar{
+    justify-content: center !important;
+}
+.pdf{
+    font-size: 36px;
+    color: #f20000;
+}
+.excel{
+  font-size: 36px;
+  color:#0d733a
+}
+.document_image{
+  margin-right: auto;
+  margin-left: auto;
+  transform: translate(12px, 6px);
+}
+.document_image .image{
+  font-size: xx-large;
+}
+.document_bottons{
+  display: flex;
+  align-items: end;
+  justify-content: right;
+}
+
+.document_body{
+  justify-content: center;
+  display: flex;
+}
+.document_card{
+  box-shadow: 0px 0px 4px 1px #00000014;
+  border: 1px solid #0000ff40;
+}
+.rtl .document_botton {
+  left: 7px !important;
+}
+.upload{
+    position: absolute;
+    top: 33px;
+}
+.document_refresh_div{
+  display: flex;
+  justify-content: right;
+  padding-top: 4px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.document_refresh_icon{
+  color: #4f98ff !important;
+  cursor: pointer;
+}
+
+.requird,.optional{
+    color: #414244a6;
+}
+.requird span{
+    color: red;
+}
+
+.CountryName{
+  margin: 7px;
+}
+
+.user_documents{
+  background: #ffffff21;
+}
+.btn-tbl-download {
+    background-color: #4f98ff;
+    height: 30px !important;
+    width: 30px !important;
+    margin: 2px !important;
+    line-height: 30px !important;
+    color: #fff;
+  
+    // box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2) !important;
+    .material-icons {
+      font-size: 16px !important;
+    }
+  
+    &:hover {
+      background-color: #4f98ff;
+      color: white;
+    }
+  
+    &:focus {
+      background-color: #4f98ff;
+    }
+  }
+
+
+.pi {
+    font-family: 'primeicons' !important;
+}
+.plan-box {
+    .plan-btn {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: gray;
+            left: 0px;
+            right: 0px;
+            top: 12px;
+        }
+    }
+}
+
+// blog
+
+.blog-play-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin: 0px auto;
+}
